@@ -2,10 +2,4 @@ const OpenTrack = require('opentrack')
 const client = new OpenTrack.Client('10.128.200.231', 4243)
 
 // Called every time data is sent
-client.onUpdate((transform, delta) => {
-	// The modified transform will be sent on the next update
-	transform.rotation.x = client.getTransform().rx
-        transform.rotation.y = client.getTransform().ry
-        transform.rotation.z = client.getTransform().rz
 
-})
