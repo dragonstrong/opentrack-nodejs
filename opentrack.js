@@ -4,7 +4,5 @@ const client = new OpenTrack.Client('10.128.200.231', 4243)
 // Called every time data is sent
 client.onUpdate((transform, delta) => {
 	// The modified transform will be sent on the next update
-	transform.rotation.z += delta * 15
-	transform.rotation.x = transform.fromBuffer(buffer).rotation.x
-	transform.rotation.y = transform.fromBuffer(buffer).rotation.y
+	
 })
