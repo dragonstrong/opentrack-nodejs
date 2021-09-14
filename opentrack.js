@@ -1,5 +1,5 @@
 const OpenTrack = require('opentrack')
-const client = new OpenTrack.Client('10.128.200.231', 4243)
+const client = new OpenTrack.Client('10.128.249.124', 4243)
 
 // Called every time data is sent
 client.onUpdate((transform, delta) => {
